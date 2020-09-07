@@ -101,7 +101,7 @@ The following steps describe the procedure in constructing the commands within b
 
 ---
 
-##Issues/Limitations
+## Issues/Limitations
 - PALM with MCR has not been thoroughly tested by the FSL community [[2]](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=FSL;8abc52d5.1904).
 It is possible that there may be unexpected issues. This docker image needs to be tested with other types of data, such 
 as csv and surface data.
