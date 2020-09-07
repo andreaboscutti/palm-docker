@@ -58,13 +58,13 @@ Compiler Toolbox. The version of MCR inside the docker image must match the user
 5. Run the Application Compiler under APPS
 6. Select palm.m as the main file
 7. Under the section "Files required for your application to run", add the palm_version.txt file and fileio folder 
-    (located in the downloaded PALM folder), and all of the .m files inside the repository folder 'mcr/matlab'
-   - The mcr/matlab .m files were copied from fsl-6.0.3/etc/matlab
+    (located in the downloaded PALM folder), and all of the .m files inside the repository folder 'for_build/mcr/matlab'
+   - The for_build/mcr/matlab .m files were copied from fsl-6.0.3/etc/matlab
    - The .m files may need to be updated as newer versions of FSL are released.
 8. Ensure that "Runtime downloaded from web" is selected
 9. Click Package button
-10. The compiler will return a warning about possibly missing packaged files. This warning can be safely ignored.
-11. Delete the for_testing and for_redistribution folders to save space
+    - The compiler will return a warning about possibly missing packaged files. This warning can be safely ignored.
+10. Delete the for_testing and for_redistribution folders to save space
 
 ### To package PALM in a docker image:
 The following steps describe the procedure in constructing the commands within build script, 
