@@ -1,12 +1,13 @@
 # PALM-Docker
 
-## Updated version of the original repository. Main changes:
+## Main changes from original repository:
    - Updated versions of software: Neurodocker (latest) PALM (latests), FSL (latest), Ubuntu (20.4), Matlab Compiler Runtime (2021b - latest supported by latest Neurodocker version
    - Added startup.sh as the entrypoint
    - Removed ```run "sed -i '\$d' \$ND_ENTRYPOINT" --``` from ```build_docker.sh```
    - Note about deleting multiarch package from Dockerfile before building
    - Added instruction to build a Singularity image
 
+## Background
 PALM-Docker allows the use of PALM within a container. This docker image contains PALM and it's dependencies 
 (FSL and MATLAB). Note that PALM can be run with OCTAVE, the free alternative to MATLAB. However, the developers state
 that MATLAB has faster pemutations, "Octave loads faster but it's a bit slower to run. Matlab loads very slowly, but 
