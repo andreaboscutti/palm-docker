@@ -120,10 +120,9 @@ The following steps describe the procedure in constructing the commands within b
     - ```docker run repronim/neurodocker:0.9.5 generate docker [build string] > Dockerfile```
    Note that docker needs to be run interactively (-i), since a prompt is going to require the user to accept 
 4. Remove "multiarch-support" from the packages included in the Dockerfile.
-   Find the line with ```grep "multiarch-support" Dockerfile```
-6. Build Docker image from resulting Dockerfile
+5. Build Docker image from resulting Dockerfile
     - ```docker build -t [image_tag] .```
-7. Push Docker image to Dockerhub
+6. Push Docker image to Dockerhub
     - ```docker push [image_tag]```
 
 ---
