@@ -1,7 +1,7 @@
 # PALM-Docker
 
 ## Main changes from original repository:
-   - Updated versions of software: Neurodocker (latest) PALM (latests), FSL (latest), Ubuntu (20.4), Matlab Compiler Runtime (2021b - latest supported by latest Neurodocker version
+   - Updated versions of software: Neurodocker (latest) PALM (latests), FSL (latest), Ubuntu (20.4), Matlab Compiler Runtime (2021b - latest supported by the latest Neurodocker version)
    - Added startup.sh as the entrypoint
    - Removed ```run "sed -i '\$d' \$ND_ENTRYPOINT" --``` from ```build_docker.sh```
    - Note about deleting multiarch package from Dockerfile before building
