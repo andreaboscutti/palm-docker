@@ -41,7 +41,7 @@ The docker image uses the following software versions:
    the latest version (https://github.com/sylabs/singularity). Go is required to compile and install (https://go.dev/dl/).
 3.   Build the image
    - ```singularity build /path/to/image/palm.simg docker://andreaboscutti/palm:5.0```
-   - Cache can be relatively big (~25GB), so you may want to redirect where singularity cache is stored
+   - Cache can be relatively big (~25GB), so you may want to redirect where the singularity cache is stored
      with ```export SINGULARITY_CACHEDIR=/path/to/your/new/cachedir```
 2. Organize PALM input (images, design matrix, contrast, etc.) into one folder and note the absolute path of this folder
 (/abs/path/to/palm/input/folder/)
