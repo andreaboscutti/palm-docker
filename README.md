@@ -118,7 +118,6 @@ The following steps describe the procedure in constructing the commands within b
         - ```--copy mcr /opt/palm-mcr```
 3. Run the neurodocker build command and output to Dockerfile
     - ```docker run repronim/neurodocker:0.9.5 generate docker [build string] > Dockerfile```
-   Note that docker needs to be run interactively (-i), since a prompt is going to require the user to accept 
 4. Remove "multiarch-support" from the packages included in the Dockerfile: ```sed -i '/multiarch-support/d' Dockerfile```
 5. Build Docker image from resulting Dockerfile
     - ```docker build -t [image_tag] .```
