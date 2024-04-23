@@ -76,8 +76,8 @@ Compiler Toolbox. The version of MCR inside the docker image must match the user
             ...
         end
 4. Within the PALM code, comment out instances of the addpath command:
-    - palm_checkprogs.m = lines 45 and 54
-    - palm.m = line 29
+    - palm_checkprogs.m: ```addpath(fullfile(fsldir,'etc','matlab'));``` and ```addpath(fullfile(fshome,'matlab'));```
+    - palm.m: ```addpath(fileparts(mfilename('fullpath')));```
 5. Run the Application Compiler under APPS
 6. Select palm.m as the main file
 7. Under the section "Files required for your application to run", add the palm_version.txt file and fileio folder 
