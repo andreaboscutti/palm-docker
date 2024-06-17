@@ -1,5 +1,5 @@
 # PALM-Docker
-
+(andreaboscutti, March 2024)
 ## Main changes from original repository:
    - Updated versions of software: Neurodocker (latest) PALM (latests), FSL (latest), Ubuntu (20.4), Matlab Compiler Runtime (2021b - latest supported by the latest Neurodocker version)
    - Added startup.sh as the entrypoint
